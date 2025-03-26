@@ -30,12 +30,12 @@
     "tailwindcss-animate": "^1.0.7",
     "ua-parser-js": "^1.0.36"
   },
-  "scripts": {
-    "predev": "rimraf .parcel-cache dist",
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+"scripts": {
+  "predev": "rimraf .parcel-cache docs",
+  "dev": "parcel src/index.html",
+  "build": "parcel build src/index.html --out-dir docs",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d docs"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
