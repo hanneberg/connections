@@ -16,7 +16,7 @@
     "eslint-config-react-app": "7.0.1",
     "lucide-react": "^0.288.0",
     "new-component": "5.0.2",
-    "parcel": "2.9.2",
+    "parcel": "^2.14.2",
     "prettier": "2.6.2",
     "process": "0.11.10",
     "query-string": "^8.1.0",
@@ -32,17 +32,20 @@
     "ua-parser-js": "^1.0.36"
   },
   "scripts": {
-  "predev": "rimraf .parcel-cache dist docs",
-  "dev": "parcel src/index.html",
-  "build": "parcel build src/index.html",
-  "postbuild": "mkdir -p docs && mv dist/* docs",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d docs"
+    "start": "parcel ./src/index.html",
+    "prebuild-dev": "shx rm -rf dist/*",
+    "build-dev": "parcel build ./index.html --no-optimize --public-url ./",
+    "prebuild": "shx rm -rf dist/*",
+    "build": "parcel build ./src/index.html --public-url ./",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
     "gh-pages": "^6.3.0",
     "postcss": "^8.4.31",
+    "shx": "^0.4.0",
     "tailwindcss": "^3.3.3"
   }
 }
