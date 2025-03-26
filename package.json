@@ -32,12 +32,12 @@
     "ua-parser-js": "^1.0.36"
   },
   "scripts": {
-    "predev": "rimraf .parcel-cache docs",
-    "dev": "parcel src/index.html",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "parcel build src/index.html"
-
+  "predev": "rimraf .parcel-cache dist docs",
+  "dev": "parcel src/index.html",
+  "build": "parcel build src/index.html",
+  "postbuild": "mkdir -p docs && mv dist/* docs",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d docs"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
