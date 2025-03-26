@@ -1,4 +1,5 @@
 {
+  "homepage": "http://hanneberg.github.io/connections",
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-alert-dialog": "^1.0.5",
@@ -30,14 +31,14 @@
     "tailwindcss-animate": "^1.0.7",
     "ua-parser-js": "^1.0.36"
   },
-"scripts": {
-  "predev": "rimraf .parcel-cache docs",
-  "dev": "parcel src/index.html",
-  "build": "parcel build src/index.html --out-dir docs",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d docs"
-}
-,
+  "scripts": {
+    "predev": "rimraf .parcel-cache docs",
+    "dev": "parcel src/index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "parcel build src/index.html"
+
+  },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
     "gh-pages": "^6.3.0",
