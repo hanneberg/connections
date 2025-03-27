@@ -1,3 +1,6 @@
+// Husk å ha words:[] i caps lock. (På spillgridden er de i caps uansett men)
+//Første kategori er den som kommer opp (til countdownen blir ferdig tror jeg. Idk helt der lol)
+
 export const CONNECTION_GAMES = [
   [
     {
@@ -21,4 +24,5 @@ export const CONNECTION_GAMES = [
       difficulty: 4,
     },
   ],
+
 ];
