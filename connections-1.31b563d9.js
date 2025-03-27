@@ -25049,7 +25049,7 @@ function InfoModal() {
             columnNumber: 16
         }, void 0),
         initiallyOpen: false,
-        actionButtonText: "Got It!",
+        actionButtonText: "Skj\xf8nner!",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _tabs.Tabs), {
             defaultValue: "how-to-play",
             children: [
@@ -25058,7 +25058,7 @@ function InfoModal() {
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _tabs.TabsTrigger), {
                             value: "how-to-play",
-                            children: "How To Play"
+                            children: "Hvordan spille"
                         }, void 0, false, {
                             fileName: "src/components/modals/InfoModal/InfoModal.js",
                             lineNumber: 23,
@@ -25066,7 +25066,7 @@ function InfoModal() {
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _tabs.TabsTrigger), {
                             value: "about-us",
-                            children: "About Us"
+                            children: "Om"
                         }, void 0, false, {
                             fileName: "src/components/modals/InfoModal/InfoModal.js",
                             lineNumber: 24,
@@ -25091,14 +25091,14 @@ function InfoModal() {
                                     value: "item-1",
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _accordion.AccordionTrigger), {
-                                            children: "What's The Goal?"
+                                            children: "Hva er meningen?"
                                         }, void 0, false, {
                                             fileName: "src/components/modals/InfoModal/InfoModal.js",
                                             lineNumber: 30,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _accordion.AccordionContent), {
-                                            children: "Find groups of items or names that share something in common."
+                                            children: "Grupp\xe9r ord eller navn som har noe til felles"
                                         }, void 0, false, {
                                             fileName: "src/components/modals/InfoModal/InfoModal.js",
                                             lineNumber: 31,
@@ -25114,14 +25114,14 @@ function InfoModal() {
                                     value: "item-2",
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _accordion.AccordionTrigger), {
-                                            children: "How Do I Play?"
+                                            children: "Hvordan spiller jeg?"
                                         }, void 0, false, {
                                             fileName: "src/components/modals/InfoModal/InfoModal.js",
                                             lineNumber: 36,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _accordion.AccordionContent), {
-                                            children: "Select the items and tap 'Submit' to check if your guess matches one of the answer categories."
+                                            children: 'Velg orda og trykk "send inn" for \xe5 se om dine gjett passer til en av kategoriene.'
                                         }, void 0, false, {
                                             fileName: "src/components/modals/InfoModal/InfoModal.js",
                                             lineNumber: 37,
@@ -25137,14 +25137,14 @@ function InfoModal() {
                                     value: "item-3",
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _accordion.AccordionTrigger), {
-                                            children: "How Many Tries Do I Get?"
+                                            children: "Hvor mange fors\xf8k f\xe5r jeg?"
                                         }, void 0, false, {
                                             fileName: "src/components/modals/InfoModal/InfoModal.js",
                                             lineNumber: 43,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _accordion.AccordionContent), {
-                                            children: `You can make ${(0, _constants.MAX_MISTAKES)} mistakes before the game ends.`
+                                            children: `Du kan ha ${(0, _constants.MAX_MISTAKES)} feil f\xf8r spillet ender.`
                                         }, void 0, false, {
                                             fileName: "src/components/modals/InfoModal/InfoModal.js",
                                             lineNumber: 44,
@@ -25237,7 +25237,7 @@ function InfoModal() {
                                                     className: "list-disc",
                                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                         children: [
-                                                            "Andcomputers har fiksa.  ",
+                                                            "Andcomputers har skrevet koden, jeg har bare gjort sm\xe5justeringer  ",
                                                             " ",
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                                                 href: "https://github.com/and-computers/react-connections-game",
@@ -43450,10 +43450,11 @@ function Game() {
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 className: "text-xl text-center mt-4",
                 children: [
-                    "Create ",
+                    "Lag ",
                     numCategories,
-                    " groups of ",
-                    categorySize
+                    " grupper med ",
+                    categorySize,
+                    " ord"
                 ]
             }, void 0, true, {
                 fileName: "src/components/Game/Game.js",
@@ -43733,7 +43734,7 @@ _c = WordRow;
 function SolvedWordRow({ ...props }) {
     _s();
     const DIFFICULTY_COLOR_MAP = {
-        1: "rgb(255,255,102)",
+        1: "rgb(255,204,153)	",
         2: "rgb(153,204,102)",
         3: "rgb(153,204,255)	",
         4: "rgb(153,102,153)"
@@ -43918,7 +43919,7 @@ function GameGrid({ gameRows, shouldGridShake, setShouldGridShake }) {
                 className: "grid gap-y-2 pb-2",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "The answer categories are below."
+                        children: "Kategoriene er under."
                     }, void 0, false, {
                         fileName: "src/components/GameGrid/GameGrid.js",
                         lineNumber: 125,
@@ -46176,10 +46177,54 @@ function excludeKeys(object, predicate) {
 }
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"iAWCl":[function(require,module,exports,__globalThis) {
+// Husk å ha words:[] i caps lock. (På spillgridden er de i caps uansett men)
+//Første kategori er den som kommer opp (til countdownen blir ferdig tror jeg. Idk helt der lol)
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CONNECTION_GAMES", ()=>CONNECTION_GAMES);
 const CONNECTION_GAMES = [
+    [
+        {
+            category: "Testing",
+            words: [
+                "d",
+                "c",
+                "b",
+                "a"
+            ],
+            difficulty: 1
+        },
+        {
+            category: "Testto",
+            words: [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            difficulty: 2
+        },
+        {
+            category: "Etternavn",
+            words: [
+                "berg",
+                "\xf8ks",
+                "ruthless",
+                "scar"
+            ],
+            difficulty: 3
+        },
+        {
+            category: "____ belte",
+            words: [
+                "Bil",
+                "Svart",
+                "L\xf8fte",
+                "Asteroide"
+            ],
+            difficulty: 4
+        }
+    ],
     [
         {
             category: "Formelle forpliktelser",
@@ -52698,7 +52743,7 @@ function NumberOfMistakesDisplay() {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 className: "text-base",
-                children: "Mistakes Remaining: "
+                children: "Feil igjen: "
             }, void 0, false, {
                 fileName: "src/components/NumberOfMistakesDisplay/NumberOfMistakesDisplay.js",
                 lineNumber: 25,
@@ -52778,7 +52823,7 @@ function GameLostModal({ open }) {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: "text-lg font-[500] text-center",
-                        children: "Better luck next time. The correct answers are below."
+                        children: "Bedre lykke neste gang  Se riktige svar under"
                     }, void 0, false, {
                         fileName: "src/components/modals/GameLostModal/GameLostModal.js",
                         lineNumber: 19,
@@ -52850,7 +52895,7 @@ var _shareGame = require("../../lib/share-game");
 var _gameStatusProvider = require("../../providers/GameStatusProvider");
 var _puzzleDataProvider = require("../../providers/PuzzleDataProvider");
 var _s = $RefreshSig$();
-function ShareScoreButton({ buttonText = "Share", className = "" }) {
+function ShareScoreButton({ buttonText = "Del", className = "" }) {
     _s();
     const { gameData } = (0, _reactDefault.default).useContext((0, _puzzleDataProvider.PuzzleDataContext));
     const { submittedGuesses } = (0, _reactDefault.default).useContext((0, _gameStatusProvider.GameStatusContext));
@@ -52859,14 +52904,14 @@ function ShareScoreButton({ buttonText = "Share", className = "" }) {
         toast({
             label: "Notification",
             title: "",
-            description: "Copied to clipboard!"
+            description: "Kopiert til utklippstavlen!"
         });
     }
     function handleShareFailure() {
         toast({
             label: "Notification",
             title: "",
-            description: "Was unable to copy to clipboard / share."
+            description: "Klarte ikke \xe5 kopiere til utklippstavlen / dele."
         });
     }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sparklesDefault.default), {
@@ -57517,18 +57562,22 @@ const renderer = ({ days, hours, minutes, seconds, completed })=>{
     if (hours > 0) timeParts.push(`${hours} Hour${hours > 1 ? "s" : ""}`);
     if (minutes > 0) timeParts.push(`${minutes} Minute${minutes > 1 ? "s" : ""}`);
     // Create a sentence based on the time parts
-    let timeLeftString = "Next Puzzle Released in ";
-    if (timeParts.length > 2) {
-        timeLeftString += timeParts.slice(0, -1).join(", ");
-        timeLeftString += `, and ${timeParts.slice(-1)}`;
-    } else if (timeParts.length == 2) timeLeftString += `${timeParts[0]} and ${timeParts[1]}`;
-    else timeLeftString += timeParts[0];
+    let timeLeftString = "Neste connections kommer n\xe5r jeg har tid";
+    //Countdown: 
+    //if (timeParts.length > 2) {
+    //  timeLeftString += timeParts.slice(0, -1).join(", ");
+    //  timeLeftString += `, and ${timeParts.slice(-1)}`;
+    //} else if (timeParts.length == 2) {
+    //  timeLeftString += `${timeParts[0]} and ${timeParts[1]}`;
+    //} else {
+    //  timeLeftString += timeParts[0];
+    //}
     // Create a sentence based on the time parts
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: timeLeftString
     }, void 0, false, {
         fileName: "src/components/CountdownToNextPuzzle/CountdownToNextPuzzle.js",
-        lineNumber: 40,
+        lineNumber: 42,
         columnNumber: 10
     }, undefined);
 };
@@ -57542,12 +57591,12 @@ function CountdownToNextPuzzle() {
             intervalDelay: 1000
         }, void 0, false, {
             fileName: "src/components/CountdownToNextPuzzle/CountdownToNextPuzzle.js",
-            lineNumber: 46,
+            lineNumber: 48,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/components/CountdownToNextPuzzle/CountdownToNextPuzzle.js",
-        lineNumber: 45,
+        lineNumber: 47,
         columnNumber: 5
     }, this);
 }
@@ -58805,7 +58854,7 @@ function GameWonModal({ open, submittedGuesses }) {
     _s();
     const { gameData } = (0, _reactDefault.default).useContext((0, _puzzleDataProvider.PuzzleDataContext));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _baseModalDefault.default), {
-        title: "You won the game!",
+        title: "Du vant!",
         initiallyOpen: open,
         footerElements: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shareScoreButtonDefault.default), {}, void 0, false, {
             fileName: "src/components/modals/GameWonModal/GameWonModal.js",
@@ -58815,7 +58864,7 @@ function GameWonModal({ open, submittedGuesses }) {
         showActionButton: false,
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "Great job, share your results!"
+                children: "Bra jobba, del gjerne resultatene!"
             }, void 0, false, {
                 fileName: "src/components/modals/GameWonModal/GameWonModal.js",
                 lineNumber: 19,
@@ -66547,8 +66596,8 @@ function GameControlButtonsPanel({ shuffledRows, setShuffledRows, setGridShake }
         })) {
             toast({
                 label: "Notification",
-                title: "Repeated Guess",
-                description: "You previously made this guess!"
+                title: "Gjentatt gjetning",
+                description: "Du har allerede gjetta dette!"
             });
             return;
         }
@@ -66580,8 +66629,8 @@ function GameControlButtonsPanel({ shuffledRows, setShuffledRows, setGridShake }
             setGridShake(true);
             if (isGuessOneAway) toast({
                 label: "Notification",
-                title: "Close Guess",
-                description: "You were one guess away from correctly guessing a category!"
+                title: "N\xe6rme",
+                description: "Du var bare en unna!"
             });
         }
     }
@@ -66605,7 +66654,7 @@ function GameControlButtonsPanel({ shuffledRows, setShuffledRows, setGridShake }
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: "select-none",
-                        children: "Shuffle"
+                        children: "Stokk om"
                     }, void 0, false, {
                         fileName: "src/components/GameControlButtonsPanel/GameControlButtonsPanel.js",
                         lineNumber: 102,
@@ -66633,7 +66682,7 @@ function GameControlButtonsPanel({ shuffledRows, setShuffledRows, setGridShake }
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: "select-none",
-                        children: "Deselect All"
+                        children: "Fjern markeringer"
                     }, void 0, false, {
                         fileName: "src/components/GameControlButtonsPanel/GameControlButtonsPanel.js",
                         lineNumber: 111,
@@ -66660,7 +66709,7 @@ function GameControlButtonsPanel({ shuffledRows, setShuffledRows, setGridShake }
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: "select-none",
-                        children: "Submit"
+                        children: "Send inn"
                     }, void 0, false, {
                         fileName: "src/components/GameControlButtonsPanel/GameControlButtonsPanel.js",
                         lineNumber: 119,
@@ -66735,7 +66784,7 @@ function ViewResultsModal() {
         trigger: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _button.Button), {
             variant: "submit",
             className: "w-full",
-            children: "View Results"
+            children: "Se resultater"
         }, void 0, false, {
             fileName: "src/components/modals/ViewResultsModal/ViewResultsModal.js",
             lineNumber: 19,
@@ -66744,7 +66793,7 @@ function ViewResultsModal() {
         initiallyOpen: false,
         showActionButton: false,
         footerElements: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shareScoreButtonDefault.default), {
-            buttonText: "Share Your Score!"
+            buttonText: "Del scoren din!"
         }, void 0, false, {
             fileName: "src/components/modals/ViewResultsModal/ViewResultsModal.js",
             lineNumber: 23,
@@ -66755,7 +66804,7 @@ function ViewResultsModal() {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     className: "text-center font-[600]",
-                    children: "Your Guesses Are Represented Below"
+                    children: "Gjetningene dine vises under"
                 }, void 0, false, {
                     fileName: "src/components/modals/ViewResultsModal/ViewResultsModal.js",
                     lineNumber: 26,
