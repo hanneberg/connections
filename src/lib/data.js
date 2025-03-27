@@ -24,5 +24,26 @@ export const CONNECTION_GAMES = [
       difficulty: 4,
     },
   ],
-
+  [
+    {
+      category: "Ting det er pant på",
+      words: ["Flaske", "Boks", "Bolig", "Bil"],
+      difficulty: 3,
+    },
+    {
+      category: "Ting med bein",
+      words: ["Stol", "Bukse", "Nesa", "Kylliglår"],
+      difficulty: 2,
+    },
+    {
+      category: "Typisk burritofyll",
+      words: ["Bønner", "Kjøttdeig", "Ris", "Salsa"],
+      difficulty: 1,
+    },
+    {
+      category: "Slå på ___",
+      words: ["Stortromma", "Ring", "Tråden", "Sjarmen"],
+      difficulty: 4,
+    },
+  ]
 ];
