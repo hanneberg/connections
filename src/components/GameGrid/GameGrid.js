@@ -23,10 +23,10 @@ function WordRow({ words }) {
 
 export function SolvedWordRow({ ...props }) {
   const DIFFICULTY_COLOR_MAP = {
-    1: "rgb(74 222 128)", // green
-    2: "rgb(251 191 36)", // amber
-    3: "rgb(129 140 248)", //indigo
-    4: "rgb(34 211 238)", //cyan
+    1: "rgb(255,255,102)", // yellow
+    2: "rgb(153,204,102)", // green
+    3: "rgb(153,204,255)	", //blue
+    4: "rgb(153,102,153)", //purple
   };
 
   const color = `${DIFFICULTY_COLOR_MAP[props.difficulty]}`;
