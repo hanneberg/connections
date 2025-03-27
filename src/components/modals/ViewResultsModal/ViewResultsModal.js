@@ -16,15 +16,15 @@ function ViewResultsModal() {
     <BaseModal
       title=""
       trigger={
-        <Button variant="submit" className="w-full" children={"View Results"} />
+        <Button variant="submit" className="w-full" children={"Se resultater"} />
       }
       initiallyOpen={false}
       showActionButton={false}
-      footerElements={<ShareScoreButton buttonText={"Share Your Score!"} />}
+      footerElements={<ShareScoreButton buttonText={"Del scoren din!"} />}
     >
       <div className="flex flex-col place-content-center">
         <p className="text-center font-[600]">
-          Your Guesses Are Represented Below
+          Gjetningene dine vises under
         </p>
         <span className="text-center whitespace-pre mb-2">
           {"\n"}

@@ -7,7 +7,7 @@ import { shareStatus } from "../../lib/share-game";
 import { GameStatusContext } from "../../providers/GameStatusProvider";
 import { PuzzleDataContext } from "../../providers/PuzzleDataProvider";
 
-function ShareScoreButton({ buttonText = "Share", className = "" }) {
+function ShareScoreButton({ buttonText = "Del", className = "" }) {
   const { gameData } = React.useContext(PuzzleDataContext);
   const { submittedGuesses } = React.useContext(GameStatusContext);
   const { toast } = useToast();
@@ -15,14 +15,14 @@ function ShareScoreButton({ buttonText = "Share", className = "" }) {
     toast({
       label: "Notification",
       title: "",
-      description: "Copied to clipboard!",
+      description: "Kopiert til utklippstavlen!",
     });
   }
   function handleShareFailure() {
     toast({
       label: "Notification",
       title: "",
-      description: "Was unable to copy to clipboard / share.",
+      description: "Klarte ikke å kopiere til utklippstavlen / dele.",
     });
   }
   return (

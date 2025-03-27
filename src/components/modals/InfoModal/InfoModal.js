@@ -16,33 +16,33 @@ function InfoModal() {
       title=""
       trigger={<Info className="mr-4" />}
       initiallyOpen={false}
-      actionButtonText="Got It!"
+      actionButtonText="Skjønner!"
     >
       <Tabs defaultValue="how-to-play">
         <TabsList className="grid w-full grid-cols-2">
-          <TabsTrigger value="how-to-play">How To Play</TabsTrigger>
-          <TabsTrigger value="about-us">About Us</TabsTrigger>
+          <TabsTrigger value="how-to-play">Hvordan spille</TabsTrigger>
+          <TabsTrigger value="about-us">Om</TabsTrigger>
         </TabsList>
         <TabsContent value="how-to-play">
           {" "}
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger>What's The Goal?</AccordionTrigger>
+              <AccordionTrigger>Hva er meningen?</AccordionTrigger>
               <AccordionContent>
-                Find groups of items or names that share something in common.
+                Gruppér ord eller navn som har noe til felles
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>How Do I Play?</AccordionTrigger>
+              <AccordionTrigger>Hvordan spiller jeg?</AccordionTrigger>
               <AccordionContent>
-                Select the items and tap 'Submit' to check if your guess matches
-                one of the answer categories.
+                Velg orda og trykk "send inn" for å se om dine gjett passer til
+                en av kategoriene.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>How Many Tries Do I Get?</AccordionTrigger>
+              <AccordionTrigger>Hvor mange forsøk får jeg?</AccordionTrigger>
               <AccordionContent>
-                {`You can make ${MAX_MISTAKES} mistakes before the game ends.`}
+                {`Du kan ha ${MAX_MISTAKES} feil før spillet ender.`}
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -69,7 +69,7 @@ function InfoModal() {
                 <p className="mb-1">Nei</p>
                 <ul className="list-disc">
                   <li>
-                    Andcomputers har fiksa.  {" "}
+                    Andcomputers har skrevet koden, jeg har bare gjort småjusteringer  {" "}
                   <a
                     href="https://github.com/and-computers/react-connections-game"
                     target="_blank"

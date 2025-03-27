@@ -23,7 +23,7 @@ function WordRow({ words }) {
 
 export function SolvedWordRow({ ...props }) {
   const DIFFICULTY_COLOR_MAP = {
-    1: "rgb(255,255,102)", // yellow
+    1: "rgb(255,204,153)	", // yellow
     2: "rgb(153,204,102)", // green
     3: "rgb(153,204,255)	", //blue
     4: "rgb(153,102,153)", //purple
@@ -122,7 +122,7 @@ function GameGrid({ gameRows, shouldGridShake, setShouldGridShake }) {
       {/* Show correct answers here after the game is over if they lost */}
       {isGameOverAndLost && (
         <div className="grid gap-y-2 pb-2">
-          <p>The answer categories are below.</p>
+          <p>Kategoriene er under.</p>
           {gameData.map((obj) => (
             <SolvedWordRow key={obj.category} {...obj} />
           ))}
