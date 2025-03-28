@@ -44290,13 +44290,14 @@ var prevRefreshSig = globalThis.$RefreshSig$;
 $parcel$ReactRefreshHelpers$e572.prelude(module);
 
 try {
+//Det er her spillet "settes opp"
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "PuzzleDataContext", ()=>PuzzleDataContext);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _timeUtils = require("../../lib/time-utils");
+var _timeUtils = require("../../lib/time-utils"); //!
 var _s = $RefreshSig$();
 const PuzzleDataContext = /*#__PURE__*/ (0, _reactDefault.default).createContext();
 function PuzzleDataProvider({ children }) {
@@ -44313,7 +44314,7 @@ function PuzzleDataProvider({ children }) {
         children: children
     }, void 0, false, {
         fileName: "src/providers/PuzzleDataProvider/PuzzleDataProvider.js",
-        lineNumber: 11,
+        lineNumber: 13,
         columnNumber: 5
     }, this);
 }
@@ -44354,8 +44355,8 @@ var _queryStringDefault = parcelHelpers.interopDefault(_queryString);
 var _data = require("./data");
 const getToday = ()=>(0, _dateFns.startOfToday)();
 const getYesterday = ()=>(0, _dateFns.startOfYesterday)();
-const firstGameDate = new Date(2023, 9, 23);
-const periodInDays = 7;
+const firstGameDate = new Date(2025, 2, 27);
+const periodInDays = 1;
 const getLastGameDate = (today)=>{
     const t = (0, _dateFns.startOfDay)(today);
     let daysSinceLastGame = (0, _dateFns.differenceInDays)(t, firstGameDate) % periodInDays;
@@ -44376,7 +44377,8 @@ const getIndex = (gameDate)=>{
         index++;
         start = (0, _dateFns.addDays)(start, periodInDays);
     }while (start <= gameDate);
-    return index;
+    //return index;
+    return 0;
 };
 const getPuzzleOfDay = (index)=>{
     if (index < 0) throw new Error("Invalid index");
@@ -46185,48 +46187,6 @@ parcelHelpers.export(exports, "CONNECTION_GAMES", ()=>CONNECTION_GAMES);
 const CONNECTION_GAMES = [
     [
         {
-            category: "Testing",
-            words: [
-                "d",
-                "c",
-                "b",
-                "a"
-            ],
-            difficulty: 1
-        },
-        {
-            category: "Testto",
-            words: [
-                "1",
-                "2",
-                "3",
-                "4"
-            ],
-            difficulty: 2
-        },
-        {
-            category: "Etternavn",
-            words: [
-                "berg",
-                "\xf8ks",
-                "ruthless",
-                "scar"
-            ],
-            difficulty: 3
-        },
-        {
-            category: "____ belte",
-            words: [
-                "Bil",
-                "Svart",
-                "L\xf8fte",
-                "Asteroide"
-            ],
-            difficulty: 4
-        }
-    ],
-    [
-        {
             category: "Formelle forpliktelser",
             words: [
                 "Avtale",
@@ -46266,6 +46226,48 @@ const CONNECTION_GAMES = [
             ],
             difficulty: 4
         }
+    ],
+    [
+        {
+            category: "Ting det er pant p\xe5",
+            words: [
+                "Flaske",
+                "Boks",
+                "Bolig",
+                "Bil"
+            ],
+            difficulty: 3
+        },
+        {
+            category: "Ting med bein",
+            words: [
+                "Stol",
+                "Bukse",
+                "Nesa",
+                "Kylligl\xe5r"
+            ],
+            difficulty: 2
+        },
+        {
+            category: "Typisk burritofyll",
+            words: [
+                "B\xf8nner",
+                "Kj\xf8ttdeig",
+                "Ris",
+                "Salsa"
+            ],
+            difficulty: 1
+        },
+        {
+            category: "Sl\xe5 p\xe5 ___",
+            words: [
+                "Stortromma",
+                "Ring",
+                "Tr\xe5den",
+                "Sjarmen"
+            ],
+            difficulty: 4
+        }
     ]
 ];
 
@@ -46283,6 +46285,7 @@ const saveGameStateToLocalStorage = (gameState)=>{
 const loadGameStateFromLocalStorage = ()=>{
     const state = localStorage.getItem(gameStateKey);
     return state ? JSON.parse(state) : null;
+//return null, vil gjøre siden "ny" hver gang refresher
 };
 const gameStatKey = "gameStats";
 const saveStatsToLocalStorage = (gameStats)=>{
