@@ -46187,6 +46187,48 @@ parcelHelpers.export(exports, "CONNECTION_GAMES", ()=>CONNECTION_GAMES);
 const CONNECTION_GAMES = [
     [
         {
+            category: "Ting det er pant p\xe5",
+            words: [
+                "Flaske",
+                "Boks",
+                "Bolig",
+                "Bil"
+            ],
+            difficulty: 3
+        },
+        {
+            category: "Ting med bein",
+            words: [
+                "Stol",
+                "Bukse",
+                "Nesa",
+                "Kyllingl\xe5r"
+            ],
+            difficulty: 2
+        },
+        {
+            category: "Typisk burritofyll",
+            words: [
+                "B\xf8nner",
+                "Kj\xf8ttdeig",
+                "Ris",
+                "Salsa"
+            ],
+            difficulty: 1
+        },
+        {
+            category: "Sl\xe5 p\xe5 ___",
+            words: [
+                "Stortromma",
+                "Ring",
+                "Tr\xe5den",
+                "Sjarmen"
+            ],
+            difficulty: 4
+        }
+    ],
+    [
+        {
             category: "Formelle forpliktelser",
             words: [
                 "Avtale",
@@ -46223,48 +46265,6 @@ const CONNECTION_GAMES = [
                 "Svart",
                 "L\xf8fte",
                 "Asteroide"
-            ],
-            difficulty: 4
-        }
-    ],
-    [
-        {
-            category: "Ting det er pant p\xe5",
-            words: [
-                "Flaske",
-                "Boks",
-                "Bolig",
-                "Bil"
-            ],
-            difficulty: 3
-        },
-        {
-            category: "Ting med bein",
-            words: [
-                "Stol",
-                "Bukse",
-                "Nesa",
-                "Kylligl\xe5r"
-            ],
-            difficulty: 2
-        },
-        {
-            category: "Typisk burritofyll",
-            words: [
-                "B\xf8nner",
-                "Kj\xf8ttdeig",
-                "Ris",
-                "Salsa"
-            ],
-            difficulty: 1
-        },
-        {
-            category: "Sl\xe5 p\xe5 ___",
-            words: [
-                "Stortromma",
-                "Ring",
-                "Tr\xe5den",
-                "Sjarmen"
             ],
             difficulty: 4
         }
