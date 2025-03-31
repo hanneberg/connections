@@ -18,5 +18,6 @@ export const saveStatsToLocalStorage = (gameStats) => {
 
 export const loadStatsFromLocalStorage = () => {
   const stats = localStorage.getItem(gameStatKey);
-  return stats ? JSON.parse(stats) : null;
+  //return stats ? JSON.parse(stats) : null;
+  return null
 };
