@@ -4,6 +4,28 @@
 export const CONNECTION_GAMES = [
   [
     {
+      category: "Belgfrukter",
+      words: ["Linse", "Ert", "Peanøtt", "Bønne"],
+      difficulty: 1,
+    },
+    {
+      category: "Sherlock holmes kosyme",
+      words: ["Frakk", "Lue", "Pipe", "Forstørrelsesglass"],
+      difficulty: 2,
+    },
+    {
+      category: "Items i mario kart",
+      words: ["Sopp", "Bananskall", "Lyn", "Skall"],
+      difficulty: 3,
+    },
+    {
+      category: "Assosiert med en ball/kule",
+      words: ["Atlas", "Time square NYE", "Tidssignal", "Lotto"],
+      difficulty: 4,
+    },
+  ],
+  [
+    {
       category: "Ting det er pant på",
       words: ["Flaske", "Boks", "Bolig", "Bil"],
       difficulty: 3,
