@@ -44355,7 +44355,7 @@ var _queryStringDefault = parcelHelpers.interopDefault(_queryString);
 var _data = require("./data");
 const getToday = ()=>(0, _dateFns.startOfToday)();
 const getYesterday = ()=>(0, _dateFns.startOfYesterday)();
-const firstGameDate = new Date(2025, 2, 27);
+const firstGameDate = new Date(2025, 2, 31);
 const periodInDays = 1;
 const getLastGameDate = (today)=>{
     const t = (0, _dateFns.startOfDay)(today);
@@ -46336,7 +46336,8 @@ const saveStatsToLocalStorage = (gameStats)=>{
 };
 const loadStatsFromLocalStorage = ()=>{
     const stats = localStorage.getItem(gameStatKey);
-    return stats ? JSON.parse(stats) : null;
+    //return stats ? JSON.parse(stats) : null;
+    return null;
 };
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"ccjsZ":[function(require,module,exports,__globalThis) {
