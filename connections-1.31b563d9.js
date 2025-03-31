@@ -46326,9 +46326,8 @@ const saveGameStateToLocalStorage = (gameState)=>{
 };
 const loadGameStateFromLocalStorage = ()=>{
     const state = localStorage.getItem(gameStateKey);
-    //return state ? JSON.parse(state) : null;
-    return null //, vil gjøre siden "ny" hver gang refresher
-    ;
+    return state ? JSON.parse(state) : null;
+//return null //, vil gjøre siden "ny" hver gang refresher
 };
 const gameStatKey = "gameStats";
 const saveStatsToLocalStorage = (gameStats)=>{
@@ -46336,8 +46335,8 @@ const saveStatsToLocalStorage = (gameStats)=>{
 };
 const loadStatsFromLocalStorage = ()=>{
     const stats = localStorage.getItem(gameStatKey);
-    //return stats ? JSON.parse(stats) : null;
-    return null;
+    return stats ? JSON.parse(stats) : null;
+//return null
 };
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"ccjsZ":[function(require,module,exports,__globalThis) {
