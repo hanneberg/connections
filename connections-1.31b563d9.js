@@ -46187,6 +46187,48 @@ parcelHelpers.export(exports, "CONNECTION_GAMES", ()=>CONNECTION_GAMES);
 const CONNECTION_GAMES = [
     [
         {
+            category: "Belgfrukter",
+            words: [
+                "Linse",
+                "Ert",
+                "Pean\xf8tt",
+                "B\xf8nne"
+            ],
+            difficulty: 1
+        },
+        {
+            category: "Sherlock holmes kosyme",
+            words: [
+                "Frakk",
+                "Lue",
+                "Pipe",
+                "Forst\xf8rrelsesglass"
+            ],
+            difficulty: 2
+        },
+        {
+            category: "Items i mario kart",
+            words: [
+                "Sopp",
+                "Bananskall",
+                "Lyn",
+                "Skall"
+            ],
+            difficulty: 3
+        },
+        {
+            category: "Assosiert med en ball/kule",
+            words: [
+                "Atlas",
+                "Time square NYE",
+                "Tidssignal",
+                "Lotto"
+            ],
+            difficulty: 4
+        }
+    ],
+    [
+        {
             category: "Ting det er pant p\xe5",
             words: [
                 "Flaske",
@@ -46284,8 +46326,9 @@ const saveGameStateToLocalStorage = (gameState)=>{
 };
 const loadGameStateFromLocalStorage = ()=>{
     const state = localStorage.getItem(gameStateKey);
-    return state ? JSON.parse(state) : null;
-//return null, vil gjøre siden "ny" hver gang refresher
+    //return state ? JSON.parse(state) : null;
+    return null //, vil gjøre siden "ny" hver gang refresher
+    ;
 };
 const gameStatKey = "gameStats";
 const saveStatsToLocalStorage = (gameStats)=>{
