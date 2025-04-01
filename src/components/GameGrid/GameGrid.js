@@ -26,7 +26,7 @@ export function SolvedWordRow({ ...props }) {
     1: "rgb(255,204,153)	", // yellow
     2: "rgb(153,204,102)", // green
     3: "rgb(153,204,255)	", //blue
-    4: "rgb(153,102,153)", //purple
+    4: "rgb(204, 51, 255)", //purple
   };
 
   const color = `${DIFFICULTY_COLOR_MAP[props.difficulty]}`;
