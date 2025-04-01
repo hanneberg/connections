@@ -43737,7 +43737,7 @@ function SolvedWordRow({ ...props }) {
         1: "rgb(255,204,153)	",
         2: "rgb(153,204,102)",
         3: "rgb(153,204,255)	",
-        4: "rgb(153,102,153)"
+        4: "rgb(204, 51, 255)"
     };
     const color = `${DIFFICULTY_COLOR_MAP[props.difficulty]}`;
     const [hasBeenClicked, setHasBeenClicked] = (0, _reactDefault.default).useState(false);
