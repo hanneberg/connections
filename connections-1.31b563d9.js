@@ -46187,6 +46187,48 @@ parcelHelpers.export(exports, "CONNECTION_GAMES", ()=>CONNECTION_GAMES);
 const CONNECTION_GAMES = [
     [
         {
+            category: "Konteiner",
+            words: [
+                "Dunk",
+                "Spann",
+                "Kar",
+                "B\xf8tte"
+            ],
+            difficulty: 1
+        },
+        {
+            category: "Ting p\xe5 Sigurd sin pult",
+            words: [
+                "Kabel",
+                "Mus",
+                "Cola",
+                "Kaffekopp"
+            ],
+            difficulty: 2
+        },
+        {
+            category: "Ord som er morsomme p\xe5 engelsk",
+            words: [
+                "Dump",
+                "Prikk",
+                "Simen",
+                "Fart"
+            ],
+            difficulty: 3
+        },
+        {
+            category: "____briller",
+            words: [
+                "Sol",
+                "\xd8l",
+                "Lese",
+                "Sveise"
+            ],
+            difficulty: 4
+        }
+    ],
+    [
+        {
             category: "Belgfrukter",
             words: [
                 "Linse",
