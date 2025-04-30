@@ -4,6 +4,54 @@
 export const CONNECTION_GAMES = [
   [
     {
+      category: "2",
+      words: ["Duo", "Par", "Bi", "Tvillinger"],
+      difficulty: 1,
+    },
+    {
+      category: "3",
+      words: ["Oslo-filmene", "Vise menn", "Egenmeldingsdager", "Bronse"],
+      difficulty: 2,
+    },
+    {
+      category: "12",
+      words: ["Dusin", "Dyresirkelen", "Måneder", "Disipler"],
+      difficulty: 3,
+    },
+    {
+      category: "1000",
+      words: ["Rema", "Bonnie Blue", "Takk", "+1 natt"],
+      difficulty: 4,
+    }, //ting som kommer i 12? Dusin, dyresirkelen, måneder, 
+    // Og så trioer! Oslo (?trilogi så hmmm men ja)
+
+    //2, 3, 12,... 
+    // 1000? Rema, onlyfans, takk, +1 natt
+  ],
+  [
+    {
+      category: "Konteiner",
+      words: ["Dunk", "Spann", "Kar", "Bøtte"],
+      difficulty: 1,
+    },
+    {
+      category: "Ting på Sigurd sin pult",
+      words: ["Kabel", "Mus", "Cola", "Kaffekopp"],
+      difficulty: 2,
+    },
+    {
+      category: "Ord som er morsomme på engelsk",
+      words: ["Dump", "Prikk", "Simen", "Fart"],
+      difficulty: 3,
+    },
+    {
+      category: "____briller",
+      words: ["Sol", "Øl", "Lese", "Sveise"],
+      difficulty: 4,
+    },
+  ],
+  [
+    {
       category: "Belgfrukter",
       words: ["Linse", "Ert", "Peanøtt", "Bønne"],
       difficulty: 1,
