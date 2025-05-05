@@ -4,6 +4,28 @@
 export const CONNECTION_GAMES = [
   [
     {
+      category: "Vårronna",
+      words: ["Gjødsle", "Så", "Harve", "Pløye"],
+      difficulty: 1,
+    },
+    {
+      category: "Stopp her",
+      words: ["Tak", "Maks", "Grense", "Ramme"],
+      difficulty: 2,
+    },
+    {
+      category: "Norske band",
+      words: ["Plumbo", "Bjelleklang", "Gåte", "Seigmen"],
+      difficulty: 3,
+    },
+    {
+      category: "____mus",
+      words: ["Flagger", "Data", "Mikke", "Skog"],
+      difficulty: 4,
+    }, 
+  ],
+  [
+    {
       category: "2",
       words: ["Duo", "Par", "Bi", "Tvillinger"],
       difficulty: 1,
@@ -22,11 +44,7 @@ export const CONNECTION_GAMES = [
       category: "1000",
       words: ["Rema", "Bonnie Blue", "Takk", "+1 natt"],
       difficulty: 4,
-    }, //ting som kommer i 12? Dusin, dyresirkelen, måneder, 
-    // Og så trioer! Oslo (?trilogi så hmmm men ja)
-
-    //2, 3, 12,... 
-    // 1000? Rema, onlyfans, takk, +1 natt
+    }, 
   ],
   [
     {
