@@ -46187,6 +46187,132 @@ parcelHelpers.export(exports, "CONNECTION_GAMES", ()=>CONNECTION_GAMES);
 const CONNECTION_GAMES = [
     [
         {
+            category: "Begynne",
+            words: [
+                "Intro",
+                "Debut",
+                "Trommevirvel",
+                "Spire"
+            ],
+            difficulty: 1
+        },
+        {
+            category: "Adjektiver i boligannonser til sm\xe5 leiligheter",
+            words: [
+                "Arealeffektiv",
+                "Sjarmerende",
+                "Praktisk",
+                "Nyere"
+            ],
+            difficulty: 2
+        },
+        {
+            category: "Nynorske ordendinger",
+            words: [
+                "ane",
+                "ing",
+                "leik",
+                "leg"
+            ],
+            difficulty: 3
+        },
+        {
+            category: "F\xf8rste ord i kjente Thorbj\xf8rn egner b\xf8ker",
+            words: [
+                "Folk",
+                "Dyrene",
+                "Klatremus",
+                "Karius"
+            ],
+            difficulty: 4
+        }
+    ],
+    [
+        {
+            category: "V\xe5rronna",
+            words: [
+                "Gj\xf8dsle",
+                "S\xe5",
+                "Harve",
+                "Pl\xf8ye"
+            ],
+            difficulty: 1
+        },
+        {
+            category: "Stopp her",
+            words: [
+                "Tak",
+                "Maks",
+                "Grense",
+                "Ramme"
+            ],
+            difficulty: 2
+        },
+        {
+            category: "Norske band",
+            words: [
+                "Plumbo",
+                "Bjelleklang",
+                "G\xe5te",
+                "Seigmen"
+            ],
+            difficulty: 3
+        },
+        {
+            category: "____mus",
+            words: [
+                "Flagger",
+                "Data",
+                "Mikke",
+                "Skog"
+            ],
+            difficulty: 4
+        }
+    ],
+    [
+        {
+            category: "2",
+            words: [
+                "Duo",
+                "Par",
+                "Bi",
+                "Tvillinger"
+            ],
+            difficulty: 1
+        },
+        {
+            category: "3",
+            words: [
+                "Oslo-filmene",
+                "Vise menn",
+                "Egenmeldingsdager",
+                "Bronse"
+            ],
+            difficulty: 2
+        },
+        {
+            category: "12",
+            words: [
+                "Dusin",
+                "Dyresirkelen",
+                "M\xe5neder",
+                "Disipler"
+            ],
+            difficulty: 3
+        },
+        {
+            category: "1000",
+            words: [
+                "Rema",
+                "Bonnie Blue",
+                "Takk",
+                "+1 natt"
+            ],
+            difficulty: 4
+        }
+    ],
+    [
+        {
             category: "Konteiner",
             words: [
                 "Dunk",
@@ -46368,8 +46494,9 @@ const saveGameStateToLocalStorage = (gameState)=>{
 };
 const loadGameStateFromLocalStorage = ()=>{
     const state = localStorage.getItem(gameStateKey);
-    return state ? JSON.parse(state) : null;
-//return null //, vil gjøre siden "ny" hver gang refresher
+    //return state ? JSON.parse(state) : null;
+    return null //, vil gjøre siden "ny" hver gang refresher
+    ;
 };
 const gameStatKey = "gameStats";
 const saveStatsToLocalStorage = (gameStats)=>{
