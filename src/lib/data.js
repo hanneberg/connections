@@ -1,7 +1,76 @@
 // Husk å ha words:[] i caps lock. (På spillgridden er de i caps uansett men)
 //Første kategori er den som kommer opp (til countdownen blir ferdig tror jeg. Idk helt der lol)
 
+
+//papp, mat, glass, metall
+//lemen, Cauchy, furry, komet (kjent for halene sine)
 export const CONNECTION_GAMES = [
+  [
+    {
+      category: "Avissuffikser",
+      words: ["Tidende", "Blad", "Gang", "Budstikke"],
+      difficulty: 1,
+    },
+    {
+      category: "Kroppsfasonger",
+      words: ["Timeglass", "Pære", "Rund", "Triangel"],
+      difficulty: 2,
+    },
+    {
+      category: "Finnes på kasino",
+      words: ["Kortstokk", "Minibank", "Sjetonger", "Terning"],
+      difficulty: 3,
+    },
+    {
+      category: "Kjent for halen(e) sine",
+      words: ["Lemen", "Cauchy-fordeling", "Furry", "Komet"],
+      difficulty: 4,
+    }, 
+  ],
+  [
+    {
+      category: "Strukturert data",
+      words: ["Matrise", "Tabell", "Katalog", "Register"],
+      difficulty: 1,
+    },
+    {
+      category: "Datatyper (python)",
+      words: ["Streng", "Boolsk", "Liste", "Ordbok"],
+      difficulty: 2,
+    },
+    {
+      category: "Tester",
+      words: ["Eksamen", "F", "kjikvadrat", "Quiz"],
+      difficulty: 3,
+    },
+    {
+      category: "Lager nabolag",
+      words: ["Simmulated annhealing", "OBOS", "Tabu", "BOB"],
+      difficulty: 4,
+    }, 
+  ],
+  [
+    {
+      category: "Begynne",
+      words: ["Intro", "Debut", "Trommevirvel", "Spire"],
+      difficulty: 1,
+    },
+    {
+      category: "Adjektiver i boligannonser til små leiligheter",
+      words: ["Arealeffektiv", "Sjarmerende", "Praktisk", "Nyere"],
+      difficulty: 2,
+    },
+    {
+      category: "Nynorske ordendinger",
+      words: ["ane", "ing", "leik", "leg"],
+      difficulty: 3,
+    },
+    {
+      category: "Første ord i kjente Thorbjørn egner bøker",
+      words: ["Folk", "Dyrene", "Klatremus", "Karius"],
+      difficulty: 4,
+    }, 
+  ],
   [
     {
       category: "Vårronna",
