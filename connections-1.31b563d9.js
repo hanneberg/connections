@@ -46181,10 +46181,138 @@ function excludeKeys(object, predicate) {
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"iAWCl":[function(require,module,exports,__globalThis) {
 // Husk å ha words:[] i caps lock. (På spillgridden er de i caps uansett men)
 //Første kategori er den som kommer opp (til countdownen blir ferdig tror jeg. Idk helt der lol)
+//papp, mat, glass, metall
+//fot, alen, pund, tomme, jerrykanne, fotballbane, reinskog, (rare måleenheter)
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CONNECTION_GAMES", ()=>CONNECTION_GAMES);
 const CONNECTION_GAMES = [
+    [
+        {
+            category: "Avissuffikser",
+            words: [
+                "Tidende",
+                "Blad",
+                "Gang",
+                "Budstikke"
+            ],
+            difficulty: 1
+        },
+        {
+            category: "Grunner til \xe5 bruke solbriller",
+            words: [
+                "Blind",
+                "Bakfull",
+                "Stil",
+                "Beskyttelse"
+            ],
+            difficulty: 2
+        },
+        {
+            category: "Finn.no kategorier",
+            words: [
+                "Torget",
+                "Reise",
+                "Eiendom",
+                "Jobb"
+            ],
+            difficulty: 3
+        },
+        {
+            category: "Masterplan",
+            words: [
+                "Kode",
+                "Skrive",
+                "Levere",
+                "Forsvare"
+            ],
+            difficulty: 4
+        }
+    ],
+    [
+        {
+            category: "Avissuffikser",
+            words: [
+                "Tidende",
+                "Blad",
+                "Gang",
+                "Budstikke"
+            ],
+            difficulty: 1
+        },
+        {
+            category: "Kroppsfasonger",
+            words: [
+                "Timeglass",
+                "P\xe6re",
+                "Rund",
+                "Triangel"
+            ],
+            difficulty: 2
+        },
+        {
+            category: "Finnes p\xe5 kasino",
+            words: [
+                "Kortstokk",
+                "Minibank",
+                "Sjetonger",
+                "Terning"
+            ],
+            difficulty: 3
+        },
+        {
+            category: "Kjent for halen(e) sine",
+            words: [
+                "Lemen",
+                "Cauchy-fordeling",
+                "Furry",
+                "Komet"
+            ],
+            difficulty: 4
+        }
+    ],
+    [
+        {
+            category: "Strukturert data",
+            words: [
+                "Matrise",
+                "Tabell",
+                "Katalog",
+                "Register"
+            ],
+            difficulty: 1
+        },
+        {
+            category: "Datatyper (python)",
+            words: [
+                "Streng",
+                "Boolsk",
+                "Liste",
+                "Ordbok"
+            ],
+            difficulty: 2
+        },
+        {
+            category: "Tester",
+            words: [
+                "Eksamen",
+                "F",
+                "kjikvadrat",
+                "Quiz"
+            ],
+            difficulty: 3
+        },
+        {
+            category: "Lager nabolag",
+            words: [
+                "Simmulated annhealing",
+                "OBOS",
+                "Tabu",
+                "BOB"
+            ],
+            difficulty: 4
+        }
+    ],
     [
         {
             category: "Begynne",
@@ -46494,9 +46622,8 @@ const saveGameStateToLocalStorage = (gameState)=>{
 };
 const loadGameStateFromLocalStorage = ()=>{
     const state = localStorage.getItem(gameStateKey);
-    //return state ? JSON.parse(state) : null;
-    return null //, vil gjøre siden "ny" hver gang refresher
-    ;
+    return state ? JSON.parse(state) : null;
+//return null //, vil gjøre siden "ny" hver gang refresher
 };
 const gameStatKey = "gameStats";
 const saveStatsToLocalStorage = (gameStats)=>{
