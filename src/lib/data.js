@@ -5,6 +5,28 @@
 //papp, mat, glass, metall
 //lemen, Cauchy, furry, komet (kjent for halene sine)
 export const CONNECTION_GAMES = [
+   [
+    {
+      category: "2",
+      words: ["Duo", "Par", "Bi", "Tvillinger"],
+      difficulty: 1,
+    },
+    {
+      category: "3",
+      words: ["Oslo-filmene", "Vise menn", "Egenmeldingsdager", "Bronse"],
+      difficulty: 2,
+    },
+    {
+      category: "12",
+      words: ["Dusin", "Dyresirkelen", "Måneder", "Disipler"],
+      difficulty: 3,
+    },
+    {
+      category: "1000",
+      words: ["Rema", "Bonnie Blue", "Takk", "+1 natt"],
+      difficulty: 4,
+    }, 
+  ],
   [
     {
       category: "Avissuffikser",
@@ -90,28 +112,6 @@ export const CONNECTION_GAMES = [
     {
       category: "____mus",
       words: ["Flagger", "Data", "Mikke", "Skog"],
-      difficulty: 4,
-    }, 
-  ],
-  [
-    {
-      category: "2",
-      words: ["Duo", "Par", "Bi", "Tvillinger"],
-      difficulty: 1,
-    },
-    {
-      category: "3",
-      words: ["Oslo-filmene", "Vise menn", "Egenmeldingsdager", "Bronse"],
-      difficulty: 2,
-    },
-    {
-      category: "12",
-      words: ["Dusin", "Dyresirkelen", "Måneder", "Disipler"],
-      difficulty: 3,
-    },
-    {
-      category: "1000",
-      words: ["Rema", "Bonnie Blue", "Takk", "+1 natt"],
       difficulty: 4,
     }, 
   ],
